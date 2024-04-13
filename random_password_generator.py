@@ -4,7 +4,7 @@ import random
 import string
 
 
-def rambabu():
+def rands():
     randomuletter = random.choice(uletters)
     randomlletter = random.choice(lletters)
     randomdigit = random.choice(digits)
@@ -13,12 +13,6 @@ def rambabu():
     randlist = [randomuletter, randomlletter, randomdigit, randompunct]
     ultrandom = random.choice(randlist)
     password.append(ultrandom)
-
-    # password.append(randomuletter)
-    # password.append(randomlletter)
-    # password.append(randomdigit)
-    # password.append(randompunct)
-
 
 pass_len = int(input("Enter Password Length(min. 8): ")) 
 len = pass_len - 4 
@@ -39,7 +33,7 @@ password.append(randomdigit)
 password.append(randompunct)
 
 for i in (range(len)):
-    rambabu()
+    rands()
 
 random.shuffle(password)
 
